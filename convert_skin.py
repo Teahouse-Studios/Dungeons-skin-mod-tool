@@ -1,10 +1,16 @@
 from PIL import Image
 import uuid
+from os.path import abspath
 
 
 def convert_mcd_skin_format(ImagePath, SkinFormat):
     img = Image.open(ImagePath)
     img = img.convert("RGBA")
+
+    if img.width != 64:
+        return False
+    if img.height != 64:
+        return False
 
     img2 = img.crop((16, 0, 24, 8))
     img2 = img2.rotate(180)
@@ -133,6 +139,6 @@ def convert_mcd_skin_format(ImagePath, SkinFormat):
     img19 = img.crop((16, 48, 32, 64))
     img.paste(img18, (16, 48))
     img.paste(img19, (0, 16))
-    img_name = str(uuid.uuid4()) + 'png'
+    img_name = str(uuid.uuid4()) + '.png'
     img.save(img_name)
-    return img_name
+    return abspath(img_name)
