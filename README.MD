@@ -9,3 +9,4 @@ UE4.22
 1. Configure `files/Tools/user_settings/editor_directory.txt` to your UE4 path.
 1. Edit `command.txt` to configure skin path, skin type, and replace target.
 1. Run `run.py`
+1. compressed_pack.pak will appear in the directory, load and enjoy it.
