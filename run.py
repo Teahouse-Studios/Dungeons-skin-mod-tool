@@ -91,3 +91,6 @@ if skintarget in target_list:
         shutil.copy(dirname + '/Tools/compressed_pack.pak', f"./")
         shutil.rmtree(dirname)
         os.remove(convert_img)
+    else:
+        print('The skin size is incorrect, should be 64*64.')
+print('The skin target name is incorrect, it can be found in run.py.')
