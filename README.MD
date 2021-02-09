@@ -7,7 +7,7 @@ UE4.22
 
 # How to use
 
-1. Put Dungeons-Mod-Kit files to `files` directory.
+1. Put Dungeons-Mod-Kit files into `files` directory.
 1. Install PIL library: `pip install pillow`.
 1. Configure `files/Tools/user_settings/editor_directory.txt` to your UE4 path.
 1. Edit `command.txt` to configure skin path, skin type, and replace target.
