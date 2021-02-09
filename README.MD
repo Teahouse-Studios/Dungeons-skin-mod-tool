@@ -3,7 +3,7 @@ python 3.6+
 
 UE4.22
 
-[Dungeons-Mod-Kit](Dungeons-Mod-Kit)
+[Dungeons-Mod-Kit](https://github.com/Dokucraft/Dungeons-Mod-Kit)
 
 # How to use
 
